@@ -7,6 +7,15 @@
   }
 
 
+  function pingPong(inputNumber) {
+    alert(inputNumber)
+    var countArr = [];
+    for (var i = 1; i <= inputNumber; i++) {
+      countArr.push(i);
+      alert(countArr);
+    }
+    }
+    
 
 
 
@@ -21,12 +30,12 @@ $(document).ready(function() {
   $("form").submit(function(e) {
     e.preventDefault();
     var inputNumber = parseInt($('input').val());
-      $("#displayResults").text(inputNumber);
 
     if (disqualifyTest(inputNumber) === true) {
         pingPong(inputNumber);
         } else {
-        alert("A number is required to count to, please check that you have entered only a number.");
+        $("#displayResults").text("");
+        alert("A number is required, please check that you have entered only a number.");
         }
   });
 });
