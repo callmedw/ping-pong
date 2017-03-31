@@ -1,30 +1,27 @@
-
-
-//--Business Logic--//
+//--------------------------Business Logic--------------------------//
 
   var disqualifyTest = function(input) {
     return /^[0-9]*$/gi.test(input);
   }
 
-
+  var countArr = [];
   function pingPong(inputNumber) {
     alert(inputNumber)
-    var countArr = [];
     for (var i = 1; i <= inputNumber; i++) {
-      countArr.push(i);
+      if ((i % 15) === 0) {
+        countArr.push("ping-pong");
+      } else if ((i % 5) === 0) {
+        countArr.push("pong");
+      } else if ((i % 3) === 0) {
+        countArr.push("ping");
+      } else {
+        countArr.push(i);
+      }
       alert(countArr);
     }
-    }
-    
+  };
 
-
-
-
-
-
-
-
-//--User Interface Logic--//
+//------------------------User Interface Logic------------------------//
 
 $(document).ready(function() {
   $("form").submit(function(e) {
@@ -37,5 +34,8 @@ $(document).ready(function() {
         $("#displayResults").text("");
         alert("A number is required, please check that you have entered only a number.");
         }
+   
   });
+
+
 });
