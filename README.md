@@ -2,6 +2,8 @@
 
 #### _This application will count up to a number specified by a user with certain exceptions where certain numbers are replaced by the words "ping" or "pong" or both., March 24, 2017_
 
+#### _Find this repository @ https://github.com/callmedw/ping-pong.git _ 
+
 #### By Dana Weiss under the watchful eye of EpicodusPDX
 
 ## Description
