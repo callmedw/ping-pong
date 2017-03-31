@@ -1,9 +1,27 @@
+body {
+  text-align: center;
+  background-color: #475a9e;
+  font-family: 'Play', sans-serif;
+}
+
+input {
+  text-align: center;
+}
+
+.jumbotron {
+  margin-top: 10%;
+  background-color: #55a32a;
+  color: white;
+  opacity: 100%;
+}
+
 .buttonImg {
   height: 50px;
   width: 50px;
-  margin-right: 4px;
+  margin-right: 10px;
 }
 
 .results {
-
+  color: white;
+  font-size: 20px;
 }

@@ -8,19 +8,18 @@
   function pingPong(inputNumber) {
     for (var i = 1; i <= inputNumber; i++) {
       if ((i % 15) === 0) {
-        countArr.push("ping-pong");
+        countArr.push(" " + "ping-PONG");
       } else if ((i % 5) === 0) {
-        countArr.push("pong");
+        countArr.push(" " + "PONG");
       } else if ((i % 3) === 0) {
-        countArr.push("ping");
+        countArr.push(" " + "ping");
       } else {
-        countArr.push(i);
+        countArr.push(" " + i);
       }
     }
   };
 
 //------------------------User Interface Logic------------------------//
-
 $(document).ready(function() {
   $("form").submit(function(e) {
     e.preventDefault();
@@ -29,11 +28,9 @@ $(document).ready(function() {
     if (disqualifyTest(inputNumber) === true) {
         pingPong(inputNumber);
         } else {
-        $("#displayResults").text("");
+        $("#displayResults").empty();
         alert("A number is required, please check that you have entered only a number.");
         }
     $("#displayResults").text(countArr);
   });
-
-
 });
