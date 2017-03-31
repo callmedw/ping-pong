@@ -32,7 +32,7 @@ _This application will count up to a user's inputted number, but numbers that ar
 *  The application will replace a displayed number with the word "ping-pong" if that number is divisible by 15.   
     - Input: 15
     - Output: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, Ping-Pong!
-    
+
 ## Known Bugs
 
 No known bugs.

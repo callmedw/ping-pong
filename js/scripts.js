@@ -6,7 +6,6 @@
 
   var countArr = [];
   function pingPong(inputNumber) {
-    alert(inputNumber)
     for (var i = 1; i <= inputNumber; i++) {
       if ((i % 15) === 0) {
         countArr.push("ping-pong");
@@ -17,7 +16,6 @@
       } else {
         countArr.push(i);
       }
-      alert(countArr);
     }
   };
 
@@ -34,7 +32,7 @@ $(document).ready(function() {
         $("#displayResults").text("");
         alert("A number is required, please check that you have entered only a number.");
         }
-   
+    $("#displayResults").text(countArr);
   });
 
 
